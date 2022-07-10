@@ -6,22 +6,23 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /* static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true"; */
-static char *font = "Source Code Pro:pixelsize=11:antialias=true:autohint=true";
+static char *font = "liberationmono:pixelsize=12:antialias=true:autohint=true";
+static char *font2[] = { "LiberationMono:pixelsize=8:antialias=true:autohint=true" };
 /* static char *font = "Jura:pixelsize=11:antialias=true:autohint=true"; */
 /* static char *font = "Binchotan_Sharp"; */
 /* static char *font = "Hack Nerd Font Mono:pixelsize=15:antialias=true:autohint=true"; */
 /* Spare fonts */
-static char *font2[] = {
-	/* "Inconsolata for Powerline:pixelsize=15:antialias=true:autohint=true", */
-	"Fira Mono Regular Nerd Font:pixelsize=14:antialias=true:autohint=true",
-};
+//static char *font2[] = {
+//	/* "Inconsolata for Powerline:pixelsize=15:antialias=true:autohint=true", */
+//	"Hack Nerd Font Mono:pixelsize=12:antialias=true:autohint=true",
+//};
 
 /* disable bold, italic and roman fonts globally */
 int disablebold = 1;
 int disableitalic = 1;
 int disableroman = 1;
 
-static int borderpx = 8;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -121,14 +122,14 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.95;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
   [0] = "#140a1d", /* black   */
   [1] = "#B52A5B", /* red     */
-  [2] = "#FF4971", /* green   */
+  [2] = "#32502E", /* green   */
   [3] = "#8897F4", /* yellow  */
   [4] = "#bd93f9", /* blue    */
   [5] = "#E9729D", /* magenta */
@@ -138,10 +139,10 @@ static const char *colorname[] = {
   /* 8 bright colors */
   [8]  = "#a8899c",  /* black   */
   [9]  = "#B52A5B", /* red     */
-  [10] = "#FF4971", /* green   */
+  [10] = "#BFD8B8", /* green   */
   [11] = "#8897F4", /* yellow  */
   [12] = "#bd93f9", /* blue    */
-  [13] = "#E9729D", /* magenta */
+  [13] = "#325288", /* magenta */
   [14] = "#F18FB0", /* cyan    */
   [15] = "#f1c4e0", /* white   */
 
